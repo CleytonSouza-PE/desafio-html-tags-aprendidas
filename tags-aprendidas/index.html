@@ -1,0 +1,467 @@
+<html>
+    <head>
+        <title>HTML</title>
+    </head>
+    <body>
+        <h1 id="inicio">Introdução ao HTML na Prática</h1>
+        <hr />
+        <ul>
+            <li><a href="#ferramentas">  <strong>Ferramentas utilizadas</strong></a></li>
+            <li><a href="#inspetor"> <strong>Inspetor de Elementos</strong></a></li>
+            <li><a href="#estrutura"><strong>Estrutura Básica do HTML</strong></a></li>
+            <li><a href="#atributo"><strong>Atributo das Tags</strong></a></li>
+            <li><a href="#textos"><strong>Textos</strong></a></li>
+            <li><a href="#listas"><strong>Listas Ordenadas e Não Ordenadas</strong></a></li>
+            <li><a href="#links"><strong>Links</strong></a></li>
+            <li><a href="#referencias"><strong>Referências</strong></a></li>
+        </ul>
+        <h2 id="ferramentas">Ferramentas utilizadas</h2>
+        <small><a href="#inicio">Voltar</a></small>
+        <p>Primeiramente temos que preparar o ambiante para começarmos a desenvolver o primeiro site.<br>
+        Nesse caso temos que abrir o navegador e baixar o seguinte o "VS Code" para a versão do seu sistema operacional atravẽs do link abaixo:</p>
+        <ul>
+            <li>
+                <a href="https://code.visualstudio.com/download" title="Baixe aqui o VSCode!" target="_blank">VSCode</a>
+            </li>
+        </ul>
+        <p><b>OBS:</b>Também precisaremos baixar a extensão "Live Server" do "VSCode" através do seu menu de extenções.</p>
+        <br>
+
+        <h2 id="inspetor">Inspetor de Elementos</h2>
+        <small><a href="#inicio">Voltar</a></small>
+        <p>É a chamada ferramenta do desenvolvedor a mesma é utilizada e disponibilizada pelos navegadores como Chrome Firefox Mozilla e Opera entre outros, nesse caso utilizaremos o Chrome como exemplo.</p>
+        <p>Como estamos utilizando o Chrome como exemplo, para utilizar essa função devemos apertar a tecla “F12” do teclado ou clicar nos três pontos localizado no canto superior direito do navegador,  “Mais ferramentas” e por fim “Ferramentas do desenvolvedor.</p>
+        <h4>Ex:</h4>
+        <img width="700" src="/Imagens/inspelem.png">
+        <br>
+        
+        <h2 id="estrutura">Estrutura Básica do HTML</h2>
+        <small><a href="#inicio">Voltar</a></small>
+        <p>A estrutura básica do <strong>HTML</strong> consiste em três tags: &lt;html&gt;, &lt;head&gt; e &lt;body&gt;.</p>
+        <p><b>&lt;html&gt;:</b>&nbsp;É a tag que inicializa e finaliza a página, ou seja, tudo que estiver dentro dela faz parte da página.</p>
+        <p><strong>&lt;head&gt;:</strong>&nbsp;Signifca cabeça, ou seja, o cabeçãrio da página nessa tag ficam armazenadas todas as informações antes que tudo seja exibido para o usuário.</p>
+        <p><strong>&lt;body&gt;:</strong>&nbsp;Significa corpo, ou seja, o corpo da página, tudo que aparecer dentro dessa tag irá aparecer para o usuário</p>
+        
+        <h3>Exemplo da estrutura básica do HTML</h3>
+
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;&lt;/head&gt;</p>
+        <p>&lt;body&gt;&lt;/body&gt;<p>
+        <p>&lt;/html&gt;</p>
+
+        <a href="about.html" title="Clique aqui e confira!" target="_self">Tabelas de tags novas e banidas do HTML</a>
+
+        
+        <h2 id="atributo">Atributo das Tags</h2>
+        <small><a href="#inicio">Voltar</a></small>
+        <p>Atributos são as propriedades que a tag pode ter, existem atributos que são mais globais, que todas as tags vão ter e outros atributos que são mais específicos de cada tag.</p>
+        
+        <h3>Atributos globais:</h3>
+        <p>São atributos que podem ser usados em qualquer tag.</p>
+
+        <h4><u>id:</u></h4>
+        <p>Na tag  <b><i>“strong”</i></b> por exemplo podemos utilizar o atributo <b><i>“id”</i></b>. É um atributo que trabalha como identificador de elementos, ou seja, serve para você identificar através do java script  qual elemento você deseja alterar.</p>
+        <h5>Ex.:</h5>
+        <p>&lt;strong id="titulo"&lt;Meu primeiro &lt;i&gt;HTML!&lt;i&gt;&lt/strong&gt;</p>
+
+        <h4><u>style:</u></h4>
+        <p>Na tag  <b><i>“strong”</i></b>&nbsp;podemos utilizar o atributo <b><i>“style”</i></b>, é um atributo quem tem a finalidade de colocar comandos do CSS direto no elemento. a título de exemplo podemos utilizar o comando "color".</p>
+        <h5>Ex:</h5>
+        <p>&lt;strong&gt;&nbsp;style="color:&nbsp;&#9744;blue;"&lt;Meu primeiro &lt;i&gt;HTML&lt;i&gt;&lt;/strong&gt</p>
+        
+        <h4><u>class:</u></h4>
+        <p>É um atributo votado para o CSS que tem como finalidade padronizar qualquer parte do seu texto no HTML, por exemplo, colocando uma palavra, parte do texto ou elemento em uma única cor.</p>
+        <h5>Ex.:</h5>
+        <p>&lt;strong&nbsp;class="título principal"&lt;Meu primeiro &lt;i&gt;HTML&lt;i&gt;&lt;/strong&gt</p>
+
+
+        <h3>Atributos mais específicos de cada tag:</h3>
+
+        <h4>&lt;input&nbsp;/&gt;</h4>
+        <p>A tag &lt;input&nbsp;/&gt; tem como finalidade configurar um campo texto, local para digitar na página, muito utilizado para criação de formulários de cadastro em sites. A mesma possui um atriguto específico chamado "type".</p> 
+        <h5><u>type</u></h5>
+        <p>Configura o campo da tag &lt;input&nbsp;/&gt; para receber textos, numeros e cor através dos comandos “text”, "number" e "color" entre outros.</p>
+        <h5><u>text</u></h5>
+        <p>Cria campo de tipo texto para ser digitado pelo usuário na página html.</p>
+        <h6>Ex.:</h6>
+        <p>&lt;input type="text" /&gt;</p>
+
+        <h5><u>number</u></h5>
+        <p>Cria campo de tipo numero para ser digitado pelo usuário na página html.</p>
+        <h6>Ex.:</h6>
+        <p>&lt;input type="number" /&gt;</p>
+        
+        <h5><u>color</u></h5>
+        <p>Cria campo de tipo cor para ser escolhido pelo usuário na página html.</p>
+        <h6>Ex.:</h6>
+        <p>&lt;input type="color" /&gt;</p>
+        
+        <br>
+
+        <h4>&lt;img&nbsp/&gt;</h4>
+        <p>Basicamente a tag coloca uma imagem na página utilizando os atributos específicos “src" e "width" entre outros.</p>
+        <h5><u>src</u></h5>
+        <p>Serve para fornecer o caminho da imagem escolhida, esteja ela dentro do computador ou em um link de página web<p>
+        <h6>Exemplo de linha de comando carregando imagem atraves de arquivo localizado no computador:</h6>
+        <p>&lt;img&nbsp;src="carro.png"&nbsp;/&gt;</p>
+
+        <h6>Exemplo de linha de comando carregando imagem atraves de link da internet:</h6>
+        <p>&lt;img&nbsp;src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIgH0LiG93oflP5F_3iHc6aqWyDlElEHJtZLweWr3eQ&s"&nbsp;/&gt;</p>
+
+        <h5>width</h5>
+        <p>Através do atributo "width" podemos ajustar a largura da imagem adicionada a página.</p>
+        <h6><strong>Ex:</h6></strong>
+        <p>&lt;img&nbsp;width="150"&nbsp;src="carro.png"&nbsp;/&gt;</p>
+        <br>
+
+        <h2 id="textos">Textos</h2>
+        <small><a href="#inicio">Voltar</a></small>
+        <p>Textos basicamente é o que o usuário vai ler, ele vai entrar no site e vai ler textos ou seja, tipografia. Existem várias tags para ser usadas nos textos.</p>
+        
+        <h3>&lt;h&gt;</h3>
+        <p>Significa head ou seja, cabeçário  ou título. A tag “h” vem acompanhada de níveis poque existem títulos e subtítulos e assim por diante subsequentemente temos  as tags “h1, h2, h3, h4, h5 e h6”, sendo h1 o título e os demais de h2 a h6 subtítulos.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p><b>&lt;h1&gt;DIO.me&lt/h1&gt;</b></p>
+        <p><b>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</b></p>
+        <p><b>&lt;h3&gt;Estudo com os melhores especialistas!&lt/h3&gt;</b></p>
+        <p><b>&lt;h4&gt;Material digital totalmente gratuíto!&lt/h4&gt;</b></p>
+        <p><b>&lt;h5&gt;Aproveite os os melhores bootcamps!&lt/h5&gt;</b></p>
+        <p><b>&lt;h6&gt;Aumente a sua chance de engressar no mercado de trabalho!&lt/h6&gt;</b></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+        <br>
+
+        <h3>&lt;p&gt;</h3>
+        <p>É a tag de parágrafo. Onde fica o corpo do texto da sua página html. A cada parágrafo é necessário abir uma tag &lt;p&gt; nova.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p>&lt;h1&gt;DIO.me&lt/h1&gt;</p>
+        <p>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</p>
+        <p><strong>&lt;p&gt;Domine as teclonogias dominadas pelas empresas.&lt;/p&gt;</strong></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+
+        <h3>&lt;blockquote&gt;</h3>
+        <p>Essa tag tem a função de configurar citações, ou seja, uma frase de outra pessoa ou uma observação que de forma você quer chamar a atenção para depois explicar mais sobre aquela palavra. O html entende isso e exibe  a citação ou observação dando uma margem diferente jogando o texto um pouco para a direita desprendendo do texto e depois você pode formatar no CSS do jeito que quiser colocando um marcador em forma de bola por exemplo entre outros.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p>&lt;h1&gt;DIO.me&lt/h1&gt;</p>
+        <p>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</p>
+        <p>&lt;p&gt;Domine as teclonogias dominadas pelas empresas.&lt;/p&gt;</p>
+        <p><b>&lt;blockquote&gt;O jeito Dio. para você ganhar destaque mais rápido no mercado.&lt;/blockquote&gt;</b></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+        
+        <h3>&lt;strong&gt;<h3>
+        <p>Coloca o texto ou parte do texto em negrito.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p>&lt;h1&gt;DIO.me&lt/h1&gt;</p>
+        <p>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</p>
+        <p><u><i>&lt;p&gt;Domine as <strong>teclonogias</strong> dominadas pelas empresas.&lt;/p&gt;</i></u></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+        
+        <h3>&lt;u&gt;</h3>
+        <p>Significa sublinhado ou seja, uma linha em baixo. Também podemos aplicar em todo o texto ou em uma parte do texto.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p>&lt;h1&gt;DIO.me&lt/h1&gt;</p>
+        <p>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</p>
+        <p><b>&lt;p&gt;Domine as <u>teclonogias</u> dominadas pelas empresas.&lt;/p&gt;</b></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+        
+        <h3>&lt;i&gt;</h3>
+        <p>Tem a função de colocar o texto ou parte do texto em itálico.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p>&lt;h1&gt;DIO.me&lt/h1&gt;</p>
+        <p>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</p>
+        <p><b>&lt;p&gt;Domine as <i>teclonogias</i> dominadas pelas empresas.&lt;/p&gt;</b></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+
+        <h3>&lt;mark&gt;</h3>
+        <p>Tem a função de colocar um marca texto em todo o texto ou em parte do texto.</p>
+        <h4>Ex.:</h3>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p>&lt;h1&gt;DIO.me&lt/h1&gt;</p>
+        <p>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</p>
+        <p><b>&lt;p&gt;Domine as <mark>teclonogias</mark> dominadas pelas empresas.&lt;/p&gt;</b></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+        
+        <h3>&lt;sup&gt;</h3>
+        <p>Tem a função de colocar um número ou uma letra elevada no texto.</p>
+        <h4>Ex.:</h4>
+        p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p>&lt;h1&gt;DIO.me&lt/h1&gt;</p>
+        <p>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</p>
+        <p><b>&lt;p&gt;Domine as teclonogias&lt;sup&gt;*&lt/sup&gt; dominadas pelas empresas.&lt;/p&gt;</b></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+        
+        <h3>sub</h3>
+        <p>Tem a função de colocar um número ou uma letra abaixo do texto.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p>&lt;h1&gt;DIO.me&lt/h1&gt;</p>
+        <p>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</p>
+        <p><b>&lt;p&gt;Domine as teclonogias&lt;sub&gt;*&lt/sub&gt; dominadas pelas empresas.&lt;/p&gt;</b></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+
+        <h3>small:</h3>
+        <p>Tem a função de reduzir o tamanho da fonte num intervalo definido de um texto.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;p&gt;Esopo, ao qual se atribui a paternidade da fábula como gênero literario disse:<br>
+        &lt;br/&gt;"Ninguém é tão grande que não possa aprender, &lt;small&gt;nem tão pequeno que não possa enssinar&lt;/small&gt;".<br>
+        &lt;p&gt;</p>
+        
+        <h3>hr:</h3>
+        <p>É um elemento HTML que representa uma quebra de linha temática entre elementos. É exibido como uma linha horizontal separando os conteúdos de uma pagina web.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;<p>
+        <p>&lt;title&lt;Mudei de título&lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;
+        <p>&lt;h1&gt;DIO.me&lt/h1&gt;</p>
+        <p><b>&lt;hr></b></p>
+        <p>&lt;h2&gt;Implemente seu futuro global agora!&lt/h2&gt;</p>
+        <p><b>&lt;hr></b></p>
+        <p>&lt;p&gt;Domine as teclonogias&lt;sub&gt;*&lt/sub&gt; dominadas pelas empresas.&lt;/p&gt;</p>
+        <p><b>&lt;hr></b></p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt/html&gt;</p>
+        <br>
+
+        <h3>font</h3>
+        <p>É utilizada para configurar o tipo, cor e tamanho das letras do texto de uma página html.</p>
+        <ul>
+
+        <h4>Cor</h4>
+        <p>É inserida da seguinte forma:</p>
+        <h3>Ex.:</h3>
+        <p>&lt;font&nbsp;color="Red"&gt;<font color="red">texto</font>&lt/font&gt;</p>
+
+        <h4>Tipo</h4>
+        <p>Que é definido das seguintes formas:</p>
+        <ul>
+            <li><b>Com uma única fonte</b></li>
+            <p><b>Ex.:</b></p>
+            <p>&lt;font face="serif"&gt;Texto&lt;/font&gt;</p>
+            <br>
+            <li><b>Com combinação de tipos de fontes</b></li>
+            <p><b>Ex.:</b></p>
+            <p>&lt;font face="Verdana,Geneva,Arial,Helvetica,sans-serif"&gt;Texto&lt;/font&gt;</p>
+        </ul>
+        <p><b>OBS:</b> O navegador procurará primeiro no computador do leitor o arquivo de fonte Verdana, caso ele encontre ele exibirá o texto com fontes do tipo Verdana. Se não encontrar procurará o arquivo de fonte Geneva, para exibir o texto e assim sucessivamente.</p>
+
+        <h4>Tamanho</h4>
+        <p>Que é definido das seguintes formas:</p>
+        <ul>
+            <li><b>Relativo</b></li>
+            <p>Que variam dos tamanhos de +1 a +6</p>
+            <p><b>Ex.:</b></p>
+            <p>&lt;font size="+1"&gt;Texto&lt/font&gt;</p>
+            <br>
+            <li><b>Absoluto</b></li>
+            <p>Que variam de tamanho de 1 a 7.</p>
+            <p><b>Ex.:</b></p>
+            <p>&lt;font size="2"&gt;Texto&lt/font&gt;</p>
+            <br>
+            <li><b>Relativo</b></li>
+            <p>Que variam dos tamanhos de -1 a -6.</p>
+            <p><b>Ex.:</b></p>
+            <p>&lt;font size="-5"&gt;Texto&lt/font&gt;</p>
+            <br>
+        </ul>
+
+        <h4>Combinação dos três atributos</h4>
+            <p><b>Ex.:</b></p>
+            <p>&lt;font face="Arial,Helvertica,sans-serif" size="+1" color="Maroon"&gt;Texto;&lt;/font&gt;</p>
+            <br><br><br>
+            <p><b>OBS:</b> Caso deseje em negrito.</p> 
+            <p><b>Ex.:</b></p>
+            <p>&lt;font face="Arial,Helvertica,sans-serif" size="+1" color="Maroon"&gt;&lt;b&gt;Texto&lt;/b&gt;&lt;/font&gt;</p>
+            <br>
+
+
+        <h3>del</h3>
+        <p>É utilizado para indicar que um texto foi suprimido, apesar de, aparecer riscado, para que o leitor tenha ciência da ocorrência.</p>            
+        <p>Pode-se designar o atributo “CITE=” dentro da tag para informar a data de supressão do texto.</p>
+        <p><b>Ex.:</b></p>
+        <p>&lt;del "cite=15/06/2011"&gt;&lt;/del&gt</p>
+        
+        <p>A critério do editor, após o texto contido dentro da tag “del”, pode-se colocar uma informação recente usando-se a tag “INS” em substituição ao texto suprimido, que aparecerá destacado.</p>
+        <p><b>Ex.:</b></p>
+        <p>&lt;p&gt;A Equipe A &lt;del&gt;perdeu&lt;/del&gt;&nbsp;&lt;ins&gt;ganhou&lt;/ins&gt;&nbsp;a partida realizada no dia 15/06/2021 para a Equipe B.</p>
+        
+        <p><b><u>Visualização no navegador:</s></b></u></p>
+        <p>A Equipe A <del>perdeu</del>&nbsp;<ins>ganhou</ins>&nbsp;a partida realizada no dia 15/06/2021 para a Equipe B.</p>
+        
+        <h3>&lt;abbr&gt;</h3>
+        <p>A tag &lt;abbr&gt; é utilizada para indicar abreviaturas ou siglas.</p>
+        <p>Marcando-se abreviaturas que você pode dar informações uteis para os navegadores, corretores ortográficos, sistemas de tradução e indexadores.</p>
+        <p>Pdemos definir abreviações com o elemento abbr. Por padrão, esse elemento é exibido como elemento de linha. O atribudo title desse elemento é utilizado para definir um tootip.</p>
+        <p>O atributo title pode ser usado na tag &ltabbr&gt; para mostrar a versão completa da abreviatura/sigla, quando você passa mouse sobre o elemento &lt;abbr&gt;.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;abbr title="Sport Clube Recife"&gt;S.C.R&lt;/abbr&gt; é o melhor time do mundo.</p>
+        <br>
+
+        <h2 id="listas">Listas Ordenadas e Não Ordenadas</h2>
+        <small><a href="#inicio">Voltar</a></small>
+        <p align="justify">As listas geralmente são utilizadas dentro de um texto para construção de um sumário por exemplo porém CSS é muito utilizada para construção de menus.</p>
+        
+        <h3>Listas Ordenadas</h3>
+        <p align="justify">Para iniciar uma lista ordenada é utilizada a tag “&lt;ol&gt;” juntamente com os itens da lista que são adicionados pela tag filha “&lt;li&gt;”. Quando se aplica uma lista ordenada o navegador vai entender que a lista será exibida por números ordenadamente. Também é possível colocar uma lista dentro de outa ou dentro de outro item.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;ol&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item1&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item2&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item5&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item1&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item2&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item5&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;</p>
+        <p>&lt;/ol&gt;</p>
+        <br>
+
+        <h3>Listas Não Ordenadas</h3>
+        <p>Para iniciar uma lista não ordenada é utilizada a tag “&lt;ul”&gt; juntamente com os itens da lista que são adicionados pela tag filha “&lt;li”&gt; que são visualizadas como marcadores.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;ul&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item1&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item2&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item5&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <br>
+
+        <h2 id="links">Links</h2>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <p align="justify">Dentro de um site nos clicamos em um link vamos para outra página, quando isso acontece estamos navegando na internet, ou seja, nós vamos navegando através de uma ligação de uma pagina para outra  e essa ligação é chamada de link.<br>Para criação de um link iremos usar uma tag específica chamada “ancora” representada pela letra “a” utilizando o atributo “href”: "&lt;a href=""&gt;".</p>
+        <h4g>Ex.:</h4>
+        <p>&lt;h1&gt;Meu primeiro site&lt;/h1&gt;</p>
+        <p>&lt;ul&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="http://dio.me"&lt;/a&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <br>
+        <p>Também podemos utilizar o atributo “target” para navegar de uma página para outra através de um link configurando para abrir na mesma aba através do complemento “_self” que é o comportamento padrão de um link.</p>
+        <h4>Ex.:</h4>
+        <p>&lt;h1&gt;Meu primeiro site&lt;/h1&gt;</p>
+        <p>&lt;ul&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="http://dio.me"&nbsp;target="_self"&gt;Dio.me&lt;/a&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <br>
+        <p><strong>OBS:</strong> Mesmo sendo utilizado o recurso “target” juntamento com o complemento “_self” podemos abrir uma página através de um link de outra página em outra aba utilizando o um recurso que o próprio navegador oferece segurando a tecla “CRTL” ao clicar em cima do link. No caso de segurarmos a tecla “SHIFT” o site é aberto através de uma nova janela do navegador.</p>
+        <p>Também podemos utilizar o atributo “target” navegar de uma página através de um link página configurando para abrir em outra aba através do complemento “_blank”.</p>
+        <p><strong>Ex.:</strong></p>
+        <p>&lt;h1&gt;Meu primeiro site&lt;/h1&gt;</p>
+        <p>&lt;ul&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="http://dio.me"&nbsp;target="_blank"&gt;Dio.me&lt;/a&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <br>
+        
+        <p>Também podemos configurar para que apareça um balão com um letreiro de informação utilizando o atributo “title”.  Isso ajuda a navegabilidade melhorando a experiência do usuário no site.</p>
+        <p><strong>Ex.:</strong></p>
+        <p>&lt;h1&gt;Meu primeiro site&lt;/h1&gt;</p>
+        <p>&lt;ul&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="http://dio.me"&nbsp;title="Clique aqui e confira!"&nbsp;target="_blank"&gt;Dio.me&lt;/a&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;</p>
+        <p>&lt;/ul&gt;</p>
+        <br>
+        
+        <p>Podemos criar um novo site lincando com o site principal para voltar. Agraves da tag “a” </p>
+        <h4>Ex.:</h4>
+        <p><strong>Página principal</strong></p>
+        <p>&lt;html&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Página principal&lt;/title&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Meu primeiro site&lt;/h1&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="about.html"&nbsp;title="Clique aqui e confira!"&nbsp;target="_self"&gt;Sobre a minha empresa&lt;/a&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+        <br>
+        
+        <p><strong>Sobre a minha empresa</strong></p>
+        <p>&lt;html&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Sobre minha empresa&lt;/title&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Sobre meu site&lt;/h1&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="index.html"&nbsp;&gt;Voltar&lt;/a&gt;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+        <br>
+        <p><strong>OBS:</strong> É recomendado que quando o link for o seu site dar preferencia para abrir na mesma aba, porém quando o link for para outro site que não seja de sua propriedade configurar para abrir em outra aba visando a importância de que o usuário não sai a do seu site.</p>
+
+
+        <h2 id="referencias">Referências</h2>
+        <small><a href="#inicio">Voltar</a></small>
+        <br>
+        <ul>
+            <li><a href="https://www.w3schools.com/tags/default.asp" target="_blank">w3schools</a></li>
+            <li><a href="https://www.htmlprogressivo.net/" target="_blank">htmlprogressivo</a></li>
+            <li><a href="https://www.portaldefinancas.com/html/small.html#:~:text=O%20marcador%20%3C%2F,%C3%A9%20obrigat%C3%B3ria." target="_blank">portaldefinancas</a></li>
+            <li><a href="http://ehgomes.com.br/disciplinas/dwe/html-formatacao.php#:~:text=A%20tag%20indica%20uma,exibido%20como%20elemento%20de%20linha." target="_blank">WDE</a></li>
+            <li><a href="http://www.nce.ufrj.br/ginape/cursohtml/conteudo/textos/paragrafo.htm#:~:text=Conforme%20ilustrado%20no%20exemplo%20acima,%C3%A0%20esquerda%20(valor%20padr%C3%A3o)." target="_blank">NCE</a></li>
+            <li><a href="https://www.homehost.com.br/blog/criar-sites/caracteres-especiais-acentos-html/#top1" target="_blank">homehost</a></li>
+        </ul>
+        
+    </body>
+</html>
